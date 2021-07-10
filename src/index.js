@@ -4,16 +4,25 @@ import reportWebVitals from "./reportWebVitals"
 
 import "assets/boxicons-2.0.7/css/boxicons.min.css"
 import "assets/css/grid.css"
+import "assets/css/theme.css"
 import "assets/css/index.css"
 
+import { createStore } from "redux"
+import { Provider } from "react-redux"
+import rootReducer from "redux/reducers"
+
 import Layout from "components/Layout/Layout"
+
+const store = createStore(rootReducer)
 
 document.title = "Admin Dashboard"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Layout />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Layout />
+    </React.StrictMode>
+</Provider>,
   document.getElementById("root")
 )
 
