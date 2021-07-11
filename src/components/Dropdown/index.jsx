@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import "./dropdown.css"
+import "./dropdown.scss"
 
 const clickOutsideRef = (content_ref, toggle_ref) => {
   document.addEventListener("mousedown", (e) => {

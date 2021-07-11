@@ -1,5 +1,5 @@
-import React from "react"
-import "./topnav.css"
+import React, { useEffect, useRef, useState } from "react"
+import "./topnav.scss"
 import { Link } from "react-router-dom"
 
 import Dropdown from "components/Dropdown"
@@ -38,9 +38,24 @@ const renderUserMenu = (item, index) => (
   </Link>
 )
 
-const index = () => {
+const TopNav = () => {
+  const [isSticky, setIsSticky] = useState(false)
+  const stickRef = useRef(null)
+  const handleScroll = () => {
+    if (stickRef.current) {
+      setIsSticky(stickRef.current.getBoundingClientRect().top <= 0)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => handleScroll())
+    return () => {
+      window.addEventListener("scroll", () => handleScroll())
+    }
+  }, [])
+
   return (
-    <div className="topnav">
+    <div className={`topnav ${isSticky ? "sticky" : ""}`} ref={stickRef}>
       <div className="topnav__search">
         <input type="text" className="" placeholder="Search here..." />
         <i className="bx bx-search"></i>
@@ -73,4 +88,4 @@ const index = () => {
   )
 }
 
-export default index
+export default TopNav
