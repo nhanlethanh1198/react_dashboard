@@ -1,5 +1,5 @@
 import React from "react"
-import "./badge.css"
+import "./badge.scss"
 
 const Badge = (props) => {
   return <span className={`badge badge-${props.type}`}>{props.content}</span>

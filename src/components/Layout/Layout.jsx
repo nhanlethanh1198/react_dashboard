@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import "./layout.css"
+import "./layout.scss"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
 

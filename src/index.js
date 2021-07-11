@@ -17,6 +17,7 @@ const store = createStore(rootReducer)
 
 document.title = "Admin Dashboard"
 
+
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
