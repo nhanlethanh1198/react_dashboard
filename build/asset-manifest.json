@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react_admin_dashboard/static/css/main.fb32401d.chunk.css",
+    "main.js": "/react_admin_dashboard/static/js/main.e6b22071.chunk.js",
+    "main.js.map": "/react_admin_dashboard/static/js/main.e6b22071.chunk.js.map",
+    "runtime-main.js": "/react_admin_dashboard/static/js/runtime-main.6c6f1f3e.js",
+    "runtime-main.js.map": "/react_admin_dashboard/static/js/runtime-main.6c6f1f3e.js.map",
+    "static/js/2.0fc41372.chunk.js": "/react_admin_dashboard/static/js/2.0fc41372.chunk.js",
+    "static/js/2.0fc41372.chunk.js.map": "/react_admin_dashboard/static/js/2.0fc41372.chunk.js.map",
+    "static/js/3.e68afe29.chunk.js": "/react_admin_dashboard/static/js/3.e68afe29.chunk.js",
+    "static/js/3.e68afe29.chunk.js.map": "/react_admin_dashboard/static/js/3.e68afe29.chunk.js.map",
+    "index.html": "/react_admin_dashboard/index.html",
+    "static/css/main.fb32401d.chunk.css.map": "/react_admin_dashboard/static/css/main.fb32401d.chunk.css.map",
+    "static/js/2.0fc41372.chunk.js.LICENSE.txt": "/react_admin_dashboard/static/js/2.0fc41372.chunk.js.LICENSE.txt",
+    "static/media/boxicons.min.css": "/react_admin_dashboard/static/media/boxicons.cbd149c5.ttf",
+    "static/media/tuat.7ec76cec.png": "/react_admin_dashboard/static/media/tuat.7ec76cec.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c6f1f3e.js",
+    "static/js/2.0fc41372.chunk.js",
+    "static/css/main.fb32401d.chunk.css",
+    "static/js/main.e6b22071.chunk.js"
+  ]
+}
